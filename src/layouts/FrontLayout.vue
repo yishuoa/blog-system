@@ -2,7 +2,7 @@
   <div class="front-layout">
     <header class="header">
       <div class="container header-inner">
-        <router-link to="/" class="logo">📝 技术博客</router-link>
+        <router-link to="/" class="logo">技术博客</router-link>
 
         <nav class="nav" :class="{ open: menuOpen }">
           <router-link to="/" @click="menuOpen = false">首页</router-link>
