@@ -2,8 +2,13 @@ import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import router from '@/router'
 
+const API_BASE =
+  import.meta.env.MODE === 'development'
+    ? '/api'
+    : 'https://blog-api-cjw6.onrender.com/api'
+
 const request = axios.create({
-  baseURL: '/api',
+  baseURL: API_BASE,
   timeout: 10000
 })
 
