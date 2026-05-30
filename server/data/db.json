@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "$2a$10$ZwHDxRvqWeslDZPft.Gr0.DmNdIh1HQr4Aug3u6IUZ9Dr4gXZ8RpO",
+      "role": "admin"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "前端开发", "slug": "frontend" },
+    { "id": 2, "name": "后端开发", "slug": "backend" },
+    { "id": 3, "name": "DevOps", "slug": "devops" }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Vue 3 组合式 API 入门",
+      "summary": "深入理解 Vue 3 Composition API 的核心概念与最佳实践",
+      "content": "# Vue 3 组合式 API\n\nVue 3 引入了 **Composition API**，让逻辑复用更加灵活。\n\n## 核心 API\n\n- `ref` / `reactive` — 响应式数据\n- `computed` — 计算属性\n- `watch` — 侦听器\n\n```js\nimport { ref } from 'vue'\nconst count = ref(0)\n```",
+      "categoryId": 1,
+      "createdAt": "2026-05-01T08:00:00.000Z",
+      "updatedAt": "2026-05-01T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Pinia 状态管理实战",
+      "summary": "使用 Pinia 替代 Vuex，构建可维护的全局状态",
+      "content": "# Pinia 状态管理\n\nPinia 是 Vue 官方推荐的状态管理库。\n\n## 定义 Store\n\n```js\nexport const useCounterStore = defineStore('counter', {\n  state: () => ({ count: 0 }),\n  actions: { increment() { this.count++ } }\n})\n```",
+      "categoryId": 1,
+      "createdAt": "2026-05-10T10:00:00.000Z",
+      "updatedAt": "2026-05-10T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Express + JWT 认证方案",
+      "summary": "Node.js 后端 JWT 登录认证的完整实现",
+      "content": "# JWT 认证\n\nJSON Web Token 是一种无状态的认证方案。\n\n## 流程\n\n1. 用户登录，服务端签发 Token\n2. 客户端存储 Token\n3. 后续请求携带 `Authorization: Bearer <token>`",
+      "categoryId": 2,
+      "createdAt": "2026-05-15T14:00:00.000Z",
+      "updatedAt": "2026-05-15T14:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Vite 构建工具深度解析",
+      "summary": "了解 Vite 的 ESM 开发服务器与 Rollup 生产构建",
+      "content": "# Vite 构建工具\n\nVite 利用浏览器原生 ESM 实现极速冷启动。\n\n- 开发：esbuild 预构建依赖\n- 生产：Rollup 打包优化",
+      "categoryId": 3,
+      "createdAt": "2026-05-20T09:00:00.000Z",
+      "updatedAt": "2026-05-20T09:00:00.000Z"
+    }
+  ]
+}
